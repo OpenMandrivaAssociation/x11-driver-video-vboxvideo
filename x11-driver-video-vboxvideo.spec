@@ -31,3 +31,4 @@ VirtualBox video driver for the Xorg X server.
 
 %files
 %{_libdir}/xorg/modules/drivers/vboxvideo_drv.so
+%{_mandir}/man4/vboxvideo.*
