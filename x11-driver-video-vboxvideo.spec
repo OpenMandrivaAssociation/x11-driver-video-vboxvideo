@@ -20,7 +20,7 @@ VirtualBox video driver for the Xorg X server.
 
 %prep
 %setup -qn %{upname}-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %configure
