@@ -3,7 +3,7 @@
 Summary:	VirtualBox video driver for the Xorg X server
 Name:		x11-driver-video-vboxvideo
 Version:	1.0.0
-Release:	2
+Release:	3
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/%{upname}-%{version}.tar.bz2
 Group:		System/X11
 License:	MIT
@@ -19,15 +19,14 @@ BuildRequires:	pkgconfig(pciaccess)
 VirtualBox video driver for the Xorg X server.
 
 %prep
-%setup -qn %{upname}-%{version}
-%autopatch -p1
+%autosetup -n %{upname}-%{version} -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_libdir}/xorg/modules/drivers/vboxvideo_drv.so
