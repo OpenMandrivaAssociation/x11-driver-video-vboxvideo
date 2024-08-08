@@ -1,4 +1,9 @@
 %define _disable_ld_no_undefined 1
+
+%ifarch aarch64
+%global optflags %{optflags} -Wno-error -Wno-implicit-function-declaration
+%endif
+
 %define	upname xf86-video-vboxvideo
 
 Summary:	VirtualBox video driver for the Xorg X server
