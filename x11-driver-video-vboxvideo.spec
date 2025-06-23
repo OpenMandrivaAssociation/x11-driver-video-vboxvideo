@@ -5,16 +5,16 @@
 %endif
 
 %define	upname xf86-video-vbox
-%define date 20260617
+#define date 20260617
 
 Summary:	VirtualBox video driver for the Xorg X server
 Name:		x11-driver-video-vboxvideo
-Version:	1.0.2%{?date:~%{date}}
+Version:	1.0.1.1%{?date:~%{date}}
 Release:	1
 %if 0%{?date:1}
 Source0:	https://github.com/X11Libre/xf86-video-vbox/archive/refs/heads/master.tar.gz#/%{name}-%{date}.tar.gz
 %else
-Source0:	https://xorg.freedesktop.org/releases/individual/driver/%{upname}-%{version}.tar.xz
+Source0:	https://github.com/X11Libre/xf86-video-vbox/archive/refs/tags/xlibre-xf86-video-vbox-%{version}.tar.gz
 %endif
 Group:		System/X11
 License:	MIT
