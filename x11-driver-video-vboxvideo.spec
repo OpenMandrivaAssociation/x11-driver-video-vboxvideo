@@ -25,6 +25,7 @@ BuildRequires:	pkgconfig(xextproto)
 BuildRequires:	pkgconfig(xproto)
 BuildRequires:	pkgconfig(fontsproto)
 BuildRequires:	pkgconfig(pciaccess)
+BuildRequires:  autoconf automake libtool slibtool
 BuildSystem:	autotools
 
 %description
