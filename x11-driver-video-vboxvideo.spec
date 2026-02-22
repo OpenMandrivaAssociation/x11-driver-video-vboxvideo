@@ -9,7 +9,7 @@
 
 Summary:	VirtualBox video driver for the Xorg X server
 Name:		x11-driver-video-vboxvideo
-Version:	1.0.1.2%{?date:~%{date}}
+Version:	25.0.0%{?date:~%{date}}
 Release:	1
 %if 0%{?date:1}
 Source0:	https://github.com/X11Libre/xf86-video-vbox/archive/refs/heads/master.tar.gz#/%{name}-%{date}.tar.gz
@@ -34,5 +34,5 @@ VirtualBox video driver for the Xorg X server.
 [ -e autogen.sh ] && NOCONFIGURE=1 ./autogen.sh
 
 %files
-%{_libdir}/xorg/modules/xlibre-25.0/drivers/vboxvideo_drv.so
+%{_libdir}/xorg/modules/xlibre-25/drivers/vboxvideo_drv.so
 %{_mandir}/man4/vboxvideo.*
